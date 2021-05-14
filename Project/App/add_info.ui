@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>add_info</class>
+ <widget class="QDialog" name="add_info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(0, 0, 48);
+</string>
+  </property>
+  <widget class="QGroupBox" name="INFO_OUT">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>190</y>
+     <width>511</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:rgb(0, 0, 90);</string>
+   </property>
+   <property name="title">
+    <string>Інформація</string>
+   </property>
+   <widget class="QSplitter" name="splitter_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>491</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="sec_name_L">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>187</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>313</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+     <property name="text">
+      <string>Прізвище:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="sec_name">
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>491</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="date_L">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>187</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>313</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+     <property name="text">
+      <string>Дата народження:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="date">
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>491</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="nick_L">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>187</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>313</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+     <property name="text">
+      <string>Нікнейм:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nick">
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>491</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="email_L">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>187</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>313</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+     <property name="text">
+      <string>Електронна пошта:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="email">
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>301</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSplitter" name="splitter">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>491</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <widget class="QLabel" name="name_L">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>187</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>313</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+     <property name="text">
+      <string>Ім'я:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="name_in">
+     <property name="minimumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>301</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>698</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>40</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;</string>
+   </property>
+   <property name="text">
+    <string>Редагування інформації</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Exit_B">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+   </property>
+   <property name="text">
+    <string>&lt;--</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Red">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>400</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+   </property>
+   <property name="text">
+    <string>Зареєструватись</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>322</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QLabel" name="stat_L">
+    <property name="maximumSize">
+     <size>
+      <width>84</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+    </property>
+    <property name="text">
+     <string> Статус: </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="stat_info">
+    <property name="minimumSize">
+     <size>
+      <width>238</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>238</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+background-color:rgb(0, 0, 140);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
